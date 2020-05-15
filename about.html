@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title> About </title>
+  <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+  <!-- navigation bar -->
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+          <div class="nav-link-wrapper">
+            <a href="index.html">HOME</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">ABOUT ME</a>
+          </div>
+      </div>
+      <div class="right-side">
+        <div class="brand"<
+          <div> GRACE WANG</div>
+        </div>
+      </div>
+    </div>
+
+<!-- content that I want displayed on the About Me page -->
+    <div class="content-wrapper">
+      <div class="about-items-wrapper">
+
+        <div class="about-item-wrapper">
+          <div class = "about-img-background" style="background-image:url(images/htx.jpeg)"></div>
+          <div class="img-text-wrapper">
+            <div class="title-text">
+              Hometown
+            </div>
+            <div class="subtitle">
+              I was born in Houston, Texas and have lived here my whole life.
+            </div>
+          </div>
+        </div>
+
+        <div class="about-item-wrapper">
+          <div class = "about-img-background" style="background-image:url(images/boba.jpeg)"></div>
+          <div class="img-text-wrapper">
+            <div class="title-text">
+              Favorite Foods
+            </div>
+            <div class="subtitle">
+              I am a huge foodie. I love boba, Cabo Bobs, and salads.
+            </div>
+          </div>
+        </div>
+
+        <div class="about-item-wrapper">
+          <div class = "about-img-background" style="background-image:url(images/tennis.jpeg)"></div>
+          <div class="img-text-wrapper">
+            <div class="title-text">
+              Sports
+            </div>
+            <div class="subtitle">
+              I love playing tennis! My favorite player to watch is Gael Monfils.
+            </div>
+          </div>
+        </div>
+
+        <div class="about-item-wrapper">
+          <div class = "about-img-background" style="background-image:url(images/code.jpeg)"></div>
+          <div class="img-text-wrapper">
+            <div class="title-text">
+              Coding Experience
+            </div>
+            <div class="subtitle">
+              I have experience coding in Java, JavaScript, Python, and now CSS and HTML. I look forward to learning much more at DALI
+            </div>
+          </div>
+        </div>
+
+        <div class="about-item-wrapper">
+          <div class = "about-img-background" style="background-image:url(images/music.jpeg)"></div>
+          <div class="img-text-wrapper">
+            <div class="title-text">
+              Music
+            </div>
+            <div class="subtitle">
+              My favorite artists are Alec Benjamin, Quinn XCII, AJR, and many others.
+            </div>
+          </div>
+        </div>
+
+        <div class="about-item-wrapper">
+          <div class = "about-img-background" style="background-image:url(images/TV.jpeg)"></div>
+          <div class="img-text-wrapper">
+            <div class="title-text">
+              TV Shows and Movies
+            </div>
+            <div class="subtitle">
+              During the COVID-19 pandemic, I have been binge watching The Good Doctor and Stranger Things.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</body>
+
+<!-- Writing JavaScript code to make images turn dark when my cursor goes over -->
+<script>
+  const portfolioItems = document.querySelectorAll('.about-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover',() => {
+      portfolioItem.childNodes[1].classList.add('img-darken');
+    })
+    portfolioItem.addEventListener('mouseout',() => {
+      portfolioItem.childNodes[1].classList.remove('img-darken');
+    })
+  })
+</script>
+</html>

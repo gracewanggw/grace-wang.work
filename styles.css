@@ -1,0 +1,101 @@
+/* setting font for entire website */
+body{
+  font-family: 'DM Mono', monospace;
+}
+
+
+/* formatting navigation bar */
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.nav-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px
+}
+.left-side{
+  display: flex;
+}
+.nav-wrapper > .left-side > div{
+  margin-right: 20px;
+  font-size: 0.9em;
+}
+.nav-link-wrapper{
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+.nav-link-wrapper a{
+  color: black
+}
+/* making navigation items change color when cursor is over it */
+.nav-link-wrapper a:hover{
+  color: #88bbaa;
+}
+
+
+/* formatting home page */
+.profile-image-wrapper img{
+  width: 100%;
+}
+.two-column-wrapper{
+  display: grid;
+  grid-template-columns: .5fr 2fr;
+  padding: 50px;
+}
+.profile-content-wrapper{
+  padding: 40px;
+}
+.profile-content-wrapper h2{
+  color: #88bbaa;
+}
+
+
+/* formatting the About me page */
+.about-items-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.about-item-wrapper{
+  position: relative;
+}
+.about-img-background{
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-text-wrapper{
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.img-text-wrapper .title-text{
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+}
+/* making subtitle text only appear when cursor is there */
+.img-text-wrapper .subtitle{
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+  font-size: 25px
+}
+.img-text-wrapper:hover .subtitle{
+  font-size: 25px
+  font-weight: 600;
+  color: #88bbaa;
+}
+/* making image darken */
+.img-darken{
+  transition: 1s;
+  filter: brightness(10%);
+}
